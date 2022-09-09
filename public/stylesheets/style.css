@@ -6,6 +6,7 @@
 
 html, body {
   min-height: 100vh;
+ 
   background-color: #161616;
   color: #ffffffD7;
   font-family: Arial, Helvetica, sans-serif;
@@ -16,11 +17,139 @@ html, body {
 .header {
   padding: 2rem 0;
   display: flex;
+  
   align-items: center;
   justify-content: center;
-  border: 2px solid #ffffffD7;
 }
 
 .header__title {
   font-size: 2rem;
 }
+
+/*** MESSAGE ***/
+
+.message {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message__details {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  min-height: 185px;
+  margin: 0.5rem 0;
+  border: 1px solid #ffffffD7;
+}
+
+.message__messageInfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  
+}
+
+.message__subject {
+  align-self: center;;
+  margin-top: 0.5rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.message__text {
+  margin: 1rem 1.5rem;
+
+}
+
+.message__userInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  
+}
+
+
+/*** BUTTON ***/
+
+.message__button {
+ margin: 2rem 0;
+ padding: 0.5rem 1.5rem;
+ border: 2px solid #ffffffD7;
+ border-radius: 3px;
+ background-color: #161616;
+ transition: 0.5s;
+}
+
+.message__button a:link, a:visited {
+  color: #ffffffD7;
+  text-decoration: none;  
+}
+
+.message__button:hover {
+  background-color: #ffffffD7;
+  color: #161616;
+  border: 2px solid #161616;
+  border-radius: 3px;
+} 
+
+.message__button:hover a {
+  color: #161616;
+} 
+
+
+/*** FORM ***/ 
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+}
+
+.form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+
+.form__button {
+  cursor: pointer;
+  align-self: center;
+  width: 100px;
+  margin: 0.5rem 0;
+  background-color: #161616;
+  border: 2px solid #ffffffD7;
+  color: #ffffffD7;
+  padding: 0.5rem 1.5rem;
+  transition: 0.2s;
+}
+
+.form__button:hover {
+  color: #161616;
+  background-color: #ffffffD7;
+  border: 2px solid #161616;
+}
+
+.form__button a:link, a:visited {
+  text-decoration: none;
+}
+
+.form__button:hover a {
+  color: #161616
+}
+
+
+
