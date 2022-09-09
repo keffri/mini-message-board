@@ -1,5 +1,9 @@
 extends layout
 
+
 block content
-  h1(class="title")= title
-  p The Odin Project - Mini Message Board
+  button
+    a(href="/new") New Message
+  each message, i in messages
+    p=message.user
+    p=message.text
