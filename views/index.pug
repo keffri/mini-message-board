@@ -2,8 +2,14 @@ extends layout
 
 
 block content
-  button
-    a(href="/new") New Message
-  each message, i in messages
-    p=message.user
-    p=message.text
+  section(class="message")
+    button(class="message__button")
+      a(href="/new" class="message__anchor") New Message
+    each message, i in messages
+      div(class="message__details")
+        div(class="message__messageInfo")
+          p(class="message__subject")=message.subject
+          p(class="message__text")=message.text
+        div(class="message__userInfo")
+          p=message.user
+          p=message.added
