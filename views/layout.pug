@@ -5,4 +5,8 @@ html
     link(rel="stylesheet", href="/stylesheets/reset.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    block header
+      header(class="header")
+        h1(class="header__title")= title
     block content
+    
