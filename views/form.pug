@@ -1,10 +1,15 @@
 extends layout 
 
 block content
-    h1(class="title") Form
-    form(method="POST" action="/new")
-        label(for="user") User:
-        input(type="text" placeholder="Name" name="user")
-        label(for="message") Message:
-        input(type="text" placeholder="Message..." name="message")
-        button(type="submit") Submit
+    section(class="form")
+        h1(class="form__title") Message Form
+        form(method="POST" action="/new" class="form__form")
+            label(for="subject" class="form__label") Subject: 
+            input(type="text" placeholder="Subject" name="subject" class="form__input" required)
+            label(for="user" class="form__label") User:
+            input(type="text" placeholder="Name" name="user" class="form__input" required)
+            label(for="message" class="form__label") Message:
+            textarea(placeholder="Message..." name="message" class="form__input" rows="10" required)
+            button(type="submit" class="form__button") Submit
+        button(class="form__button")
+            a(href="/") Cancel
