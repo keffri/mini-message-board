@@ -24,7 +24,7 @@ router.post('/new', (req, res) => {
     subject: req.body.subject,
     text: req.body.message,
     user: req.body.user,
-    added: moment().format('MMMM Do YY'),
+    added: moment().format('MMMM Do YYYY'),
   });
   res.redirect('/');
   console.log(messages);
