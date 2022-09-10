@@ -15,7 +15,7 @@ This page has two paths ("/" and "/new"). The index page displays the messages, 
 Give it a try here: https://blooming-earth-14314.herokuapp.com/
 
 <p align="center">
-  <img src="./public/miniMessageBoardPreview.png" width="1000" title="Mini Message Board Preview">
+  <img src="/public/images/miniMessageBoardPreview.png" width="1000" title="Mini Message Board Preview">
 </p>
 
 ## Author
