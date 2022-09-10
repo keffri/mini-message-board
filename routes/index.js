@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 const moment = require('moment');
+const { v4: uuidv4 } = require('uuid');
 
 const messages = [
   {
+    id: uuidv4(),
     subject: 'Welcome!',
     text: 'This Mini Message Board was built with NodeJs, Express and PUG.',
     user: 'Keffri Neal',
@@ -21,6 +23,7 @@ router.get('/new', function (req, res, next) {
 
 router.post('/new', (req, res) => {
   messages.push({
+    id: uuidv4(),
     subject: req.body.subject,
     text: req.body.message,
     user: req.body.user,
